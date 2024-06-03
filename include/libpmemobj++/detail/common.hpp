@@ -151,7 +151,7 @@ namespace detail
 {
 
 #if defined(__x86_64) || defined(_M_X64) || defined(__aarch64__) ||            \
-	defined(__riscv)
+	defined(__riscv) || defined(__loongarch64)
 static constexpr size_t CACHELINE_SIZE = 64ULL;
 #elif defined(__PPC64__)
 static constexpr size_t CACHELINE_SIZE = 128ULL;
